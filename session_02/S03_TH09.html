@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Đặt Hàng</title>
+    <style>
+      #capacity {
+        width: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Thông tin sản phẩm</legend>
+        <label for="name_item"
+          >Tên sản phẩm:
+          <input type="text" name="name_item" id="name_item" />
+        </label>
+        <label for="capacity"
+          >Số lượng:
+          <input type="number" name="capacity" id="capacity" value="1" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Tông tin giao hàng</legend>
+        <label for="name"
+          >Họ và Tên:
+          <input type="text" name="name" id="name" />
+        </label>
+        <label for="email"
+          >Email:
+          <input type="email" name="email" id="email" />
+        </label>
+        <label for="phone"
+          >Số điện thoại:
+          <input type="number" name="phone" id="phone" />
+        </label>
+        <label for="address"
+          >Địa chỉ:
+          <textarea name="address" id="address" cols="20" rows="2"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Thông tin thanh toán</legend>
+        <label for="payment"
+          >Phương thức thanh toán:
+          <select name="payment" id="payment">
+            <option value="1">Thanh toán khi nhận hàng</option>
+            <option value="2">Thanh toán online</option>
+            <option value="3">Thanh toán trả góp</option>
+          </select>
+        </label>
+      </fieldset>
+      <input type="submit" value="Đặt hàng" />
+    </form>
+  </body>
+</html>
